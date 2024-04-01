@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <header>
+        <img class="haha" src="./img/saturn1.png" alt="">
+      
+        <a href="#" class="logo" > Twinkle<span> - </span>Toes</a>
+        
+        <ul class="navbar">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="blog-item">
+                <a href="#">Blog</a>
+                <div class="blog-options">
+                    <a href="blog1.html">Food</a>
+                    <a href="blog2.html">Travel</a>
+                </div>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="menu-btn">
+            <span></span>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+    <section class="home">
+        <div class="home-text">
+            <span>My Blog</span>
+            <h1>Hi</h1>
+            <p>Welcome to my hehe alam muna</p>
+            <div class="main-btn">
+                <a href="about.html" class="btn">about</a>
+                <a href="contact.html" class="btn two">contact</a>
+            </div>
+        </div>
+
+        <div class="home-img">
+            <img src="img/up.png">
+        </div>
+    </section>
+
+    <div class="banner">
+        <div class="content bg1 active">
+            <h1>Art Blog</h1>
+            <h4>
+                <span>Try gani og tan-aw malingaw ka HAHAHA</span>
+            </h4>
+            <p>
+                mwehehehehe
+            </p>
+            <div class="button">
+                <a href="blog1.html"><i class="fa fa-play" aria-hidden="true"></i>Go to blog</a>
+            </div>
+        </div>
+        <div class="content bg3">
+            <h1>blog2</h1>
+            <h4>
+                <span>atabar</span><span>2h 14min</span><span>2024</span>
+            </h4>
+            <p>
+                yey
+            </p>
+            <div class="button">
+                <a href="blog2.html"><i class="fa fa-play" aria-hidden="true"></i>blog</a>
+            </div>
+        </div>
+        <div class="content bg2">
+           <h1>blog3</h1>
+            <h4>
+                <span>blabla</span><span>2h 14min</span><span>2024</span>
+            </h4>
+            <p>
+                hahahahaha
+            </p>
+            <div class="button">
+                <a href="#"><i class="fa fa-play" aria-hidden="true"></i>blog</a>
+            </div>
+        </div>
+        <div class="carousel-box">
+            <div class="carousel">
+                <div class="carousel-item" onclick="changeBg('b1.jpg', 'bg1');">
+                    <img src="./img/b1.jpg" alt="">
+                </div>
+                <div class="carousel-item" onclick="changeBg('bg3.jpg', 'bg3');">
+                    <img src="./img/bg3.jpg" alt="">
+                </div>
+                <div class="carousel-item" onclick="changeBg('bg2.jpg', 'bg2');">
+                    <img src="./img/bg2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
