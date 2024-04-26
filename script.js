@@ -1,6 +1,6 @@
 
 let menu = document.querySelector('#menu-icon');
-let navbar = document.querySelector('.navbar1');
+let navbar = document.querySelector('.navbar');
 
 menu.onclick = () => {
     menu.classList.toggle('bx-x');
@@ -55,17 +55,4 @@ function playVideo() {
     closeButton.style.display = "block"; // Also show the close button
     video.play();
 }
-function closeVideo() {
-    var video = document.getElementById("myVideo");
-    var image = document.querySelector(".video img");
-    var closeButton = document.getElementById("closeButton");
-    
-    video.pause();
-    video.currentTime = 0; // Reset video to beginning
-    video.style.display = "none";
-    closeButton.style.display = "none";
-    image.style.display = "block";
-}
-
-
 

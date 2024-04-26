@@ -54,7 +54,7 @@
   
     --transition: 0.5s ease;
 
-    --section-padding: 10px;
+    --section-padding: 50px;
 
     --radius-10: 10px;
     --radius-14: 14px;
@@ -200,6 +200,47 @@ section{
     line-height: 30px;
     margin-bottom: 30px;
 }
+
+
+
+.contact {
+    padding: 50px 15% 0; /* Adjust padding to add less space at the top */
+    text-align: center; /* Center-align content */
+}
+
+.contact-info {
+    max-width: 600px; /* Limit width of contact info */
+    margin: 0 auto; /* Center contact info horizontally */
+}
+
+.contact-info h2 {
+    font-size: 2rem; /* Adjust heading size as needed */
+    margin-bottom: 30px; /* Add some space below the heading */
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Make the list items display horizontally */
+    justify-content: center; /* Center-align the list items horizontally */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+}
+
+.contact-info ul li {
+    font-size: 1.2rem; /* Adjust font size as needed */
+    margin-bottom: 10px; /* Add space between each contact detail */
+    margin-right: 30px; /* Add space between items */
+    display: flex; /* Make list items flex containers */
+    align-items: center; /* Center-align items vertically */
+}
+
+.contact-info ul li i {
+    margin-right: 10px; /* Add some space between icon and text */
+    font-size: 30; /* Adjust icon size as needed */
+}
+
+
+
 
 .btn{
     display: inline-block;
@@ -365,7 +406,7 @@ section{
 
 @media (max-width: 900px){
     .menu-btn{
-        display: block;
+        display: none;
     }
     .share{
         display: none;
@@ -398,44 +439,16 @@ section{
 }
 
 @media (max-width: 900px){
-    .menu-btn{
-        display: block;
-        position: absolute;
-        left: 80%;
-    }
     .navbar{
         position: absolute;
-        width: 100%;
-        height: 100vh;
-        padding: 40px 50px;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 100%;
-        display: flex;
-        flex-direction: column;
-        background: #2d2d2d;
-        transition: all 0.4s ease-in-out;
-    }
-    .navbar a{
-        display: block;
-        color: #c3c3c3;
-        padding: 0px;
-        margin: 0px 0px 40px 0px;
-        font-size: 2rem;
-        font-weight: 400;
-    }
-    .navbar.open{
-        left: 0;
+        justify-content: center;
     }
 }
 
 
-@media (max-width: 412px){
+@media (max-width: 414px){
     .menu-btn{
-        display: block;
-        position: absolute;
-        left: 70%;
+        display: none;
     }
     .logo{
         font-size: 20px;
@@ -466,14 +479,15 @@ section{
     .home-img{
         margin: auto;
         height: 20px;
-        width: 100%;
+        width: 90%;
+        top: 10px;
     }
     .home-img img{
         max-width: 400px;
         width: 100%;
         position: absolute;
-        left: 10%;
-        top: 10%;
+        left: 3%;
+
     }
     
 }
@@ -509,6 +523,21 @@ section{
     }
 }
 
+@media (max-width: 414px){
+    .logo{
+        display: none;
+    }
+    .navbar{
+        left: 20%;
+        font-size: small;
+    }
+    .navbar a{
+        font-size: 15px;
+        margin: 0 10px;
+    }
+
+}
+
 .home-img img{
     animation: imgg 2s ease-in-out infinite;
     animation-delay: 2s;
@@ -534,7 +563,7 @@ section{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: url("./img/b1.jpg") no-repeat;
+    background: url("./img/b3.gif") no-repeat;
     background-size: cover;
     background-position: center;
     overflow: hidden;
@@ -563,6 +592,7 @@ section{
 }
 
 .content.active{
+    margin-left: 10px;
     display: block;
     visibility: visible;
     transform: scale(1);
@@ -653,39 +683,130 @@ section{
 
 
 
-@media (max-width: 412px){
-    .banner{
+@media (max-width: 800px) {
+    .banner {
         min-height: 100vh;
         position: relative;
         padding: 0;
-     
+        width: 100%; /* Set banner width to 100% */
     }
-    .carousel-box{
+
+    .carousel-box {
         top: 100px;
         height: 300px;
         position: absolute;
-        min-width: 100px;
+        width: 100%; /* Set carousel box width to 100% */
     }
-    .carousel{
+
+    .carousel {
         position: absolute;
         height: 50%;
-
+        width: 100%; /* Set carousel width to 100% */
     }
-    .carousel-item{
+
+    .carousel-item {
         min-width: 1px;
     }
-    .content{
+
+    .content {
         min-width: none;
         position: absolute;
         top: 10%;
+        width: 100%; /* Set content width to 100% */
     }
 }
 
+@media (max-width: 414px) {
+    .banner {
+        min-height: 100vh;
+        position: relative;
+        padding: 0;
+        width: 100%; /* Set banner width to 100% */
+    }
 
+    .carousel-box {
+        top: 160px;
+        height: 300px;
+        position: absolute;
+        width: 100%; /* Set carousel box width to 100% */
+    }
+
+    .carousel {
+        position: absolute;
+        height: 50%;
+        width: 100%; /* Set carousel width to 100% */
+    }
+
+    .carousel-item {
+
+        width: 1px;
+    }
+
+    .content {
+        min-width: none;
+        position: absolute;
+        top: 10%;
+        width: 100%; /* Set content width to 100% */
+    }
+}
 .video{
-    position: relative;
+    position: absolute;
+    width: 900px;
+
+    left: 18%;
+}
+.video1{
+    position: absolute;
     width: 600px;
     height: 700px;
+    right: 5%;
+}
+.video2{
+    position:absolute;
+    width: 600px;
+    height: 700px;
+    margin-bottom: 5rem;
+    left: 20%;
+
+
+}
+
+.vid {
+    position: relative;
+    display:flex;
+    justify-content: center;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.0%; /* 16:9 aspect ratio (height / width) */
+}
+.vid iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.sulod{
+    position: absolute;
+    left:50%;
+    margin-right: 5rem;
+}
+.sulod1{
+    position: absolute;
+    top: 120%;
+    right:50%;
+    margin-left: 5rem;
+}
+.sulod2{
+    position: absolute;
+    top: 310%;
+    right:50%;
+    margin-left: 5rem;
+}
+.video1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .video img{
@@ -693,7 +814,14 @@ section{
     height: 100%;
     object-fit: contain;
 }
-
+.okvideo{
+    margin-top: 5%;
+    margin-bottom: 10px;
+    width: 100%;
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+}
 .home1{
     height: 100vh;
     justify-content: space-around;
@@ -701,30 +829,69 @@ section{
     align-items: center;
 }
 
-#closeButton {
+
+
+.down{
     position: absolute;
-    top: 21%;
-    left: 48%;
-    z-index: 9999; /* Ensure it's above the video */
-    display: none; /* Initially hide the button */
-    padding: 10px 15px;
-    background: linear-gradient(130.08deg, #383528 0%, #191919 100%);
-    box-shadow: 0px 20px 40px #00000070;
-    border: 1px solid #3b3b3b;
-    border-radius: 100px;
-    color: var(--text-color);
-    font-weight: 700;
-    font-size: 15px;
-    text-transform: uppercase;
+    top: 80%;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+.down1{
+    position: absolute;
+    top: 180%;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+.down2{
+    position: absolute;
+    top: 280%;
+    margin-left: 5rem;
+    margin-right: 5rem;
 }
 
 #myVideo {
     position: absolute;
     top: 50;
-    left: 20px;
-    width: 50%;
+    left: 18%;
+    width: 65%;
 }
 
+.containera {
+    margin: 0 auto;
+    margin-left: 8px;
+    padding: 20px;
+}
+.title {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+.contenta {
+    height: 90vh;
+    line-height: 4.6;
+}
+.bimg {
+    max-width: 50%; /* Adjust the width of the image */
+    height: auto;
+    margin-right: 20px; /* Add some space between the image and text */
+    float: left;
+}
+.bimg1 {
+    max-width: 50%; /* Adjust the width of the image */
+    height: auto;
+    margin-right: 20px; /* Add some space between the image and text */
+    float: right;
+}
+.right-text {
+    font-size: var(--p-font);
+    font-weight: 400;
+    color: #c3c3c3;
+
+    flex-grow: 10; /* Allow the text to grow and occupy remaining space */
+}
 .video-container:hover #closeButton {
     display: block; /* Show the close button when the video container is hovered over */
 }
@@ -733,216 +900,46 @@ section{
     position: relative; /* Ensure relative positioning for absolute button */
 }
 
-
-
-
-*, *::before, *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-.featured-car .title-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px 15px;
-    margin-bottom: 30px;
-  }
-
-  .h2{
-    font-size: 30px;
-  }
-  
-  .featured-car-link {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    color: var(--independence);
-    font-size: var(--fs-6);
-  }
-  
-  .featured-car-link span { transition: var(--transition); }
-  
-  .featured-car-link:is(:hover, :focus) span { color: var(--space-cadet); }
-  
-  .featured-car-link ion-icon {
-    margin-top: 3px;
-    transition: var(--transition);
-  }
-  
-  .featured-car-link:is(:hover, :focus) ion-icon { color: var(--carolina-blue); }
-  
-  .featured-car-list {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr);
-    gap: 30px;
-  }
-  
-  .featured-car-card {
-    background: var(--gradient);
-    border: 1px solid var(--white);
-    border-radius: var(--radius-18);
-    padding: 10px;
-    box-shadow: var(--shadow-1);
-  }
-  
-  .featured-car-card .card-banner {
-    background: hsla(0, 0%, 0%, 0.2);
-    aspect-ratio: 2 / 3;
-    border-radius: var(--radius-18);
-    overflow: hidden;
-  }
-  
-  .featured-car-card .card-banner > img {
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .featured-car-card .card-content { padding: 20px 10px 10px; }
-  
-  .featured-car-card .card-title-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 5px;
-    margin-bottom: 15px;
-  }
-  
-  .featured-car-card .card-title { width: calc(100% - 60px); }
-  
-  .featured-car-card .card-title > a {
-    color: inherit;
-    width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-size: 20px;
-  }
-  
-  .featured-car-card .card-title > a:is(:hover, :focus) { color: var(--carolina-blue); }
-  
-  .featured-car-card .year {
-    font-family: var(--ff-nunito);
-    font-size: var(--fs-6);
-    font-weight: var(--fw-600);
-    padding: 3px 12px;
-    border: 2px dashed hsla(204, 91%, 53%, 0.4);
-    border-radius: var(--radius-14);
-  }
-    
-
-  .w-100 { width: 100%; }
-  /*-----------------------------------*\
-    #MEDIA QUERIES
-  \*-----------------------------------*/
-  
-  /**
-   * responsive for large than 350px screen
-   */
-  
-  @media (min-width: 350px) {
-  
-    /**
-     * FEATURED CAR
-     */
-  
-    .featured-car-card .card-list { grid-template-columns: 1fr 1fr; }
-  
-    .featured-car-card .card-price { margin-right: auto; }
-  
-    .featured-car-card .btn:last-child {
-      min-width: max-content;
-      padding-inline: 15px;
+@media (max-width: 414px){
+    .bimg{
+        margin-top: 10%;
+        max-width: 100%;
+        margin-bottom: 10%;
     }
-  
-  }
-  
-  
-  
-  
-  
-  /**
-   * responsive for large than 580px screen
-   */
-  
-  @media (min-width: 580px) {
-  
-    /**
-     * REUSED STYLE
-     */
-  
-    .container {
-      max-width: 540px;
-      margin-inline: auto;
+    .bimg1 {
+        max-width: 100%;
+        margin-bottom: 10%;
+        margin-top: 10%;
     }
-
-   
-    
-      /**
-       * FEATURED CAR
-       */
-    
-      .featured-car-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    
+    .contenta {
+        height: 90vh;
+        line-height: 1.6;
+        
     }
-    
-    
-    
-    
-    
-    /**
-     * responsive for large than 992px screen
-     */
-    
-    @media (min-width: 992px) {
-    
-      /**
-       * REUSED STYLE
-       */
-    
-      .container { max-width: 960px; }
-    
-    
-    
-    /**
-     * responsive for large than 1200px screen
-     */
-    
-    @media (min-width: 1200px) {
-    
-      /**
-       * CUSTOM PROPERTY
-       */
-    
-      :root {
-    
-        /**
-         * typography
-         */
-    
-        --fs-1: 2.875rem;
-        --fs-2: 2rem;
-    
-      }
-    
-    
-    
-      /**
-       * REUSED STYLE
-       */
-    
-      .container { max-width: 1170px; }
-    
-    
-    
-      /**
-       * FEATURED CAR 
-       */
-    
-      .featured-car-list { grid-template-columns: repeat(3, minmax(0, 2fr)); }
-    
-    
+    .vid {
+        margin-top: 10%;
+        padding-bottom: 50%; /* Adjust aspect ratio or remove padding as needed for smaller screens */
+        width: 300px;
     }
-    
 }
+
+@media (max-width: 414px){
+    .video img{
+        position: absolute;
+        top: 15%;
+        width: 100%;
+    }
+    .sulod{
+        position: absolute;
+        top: 15%;
+        font-size: small;
+        text-align: center;
+    }
+    #myVideo{
+        position: absolute;
+        top: 52%;
+        width: 89%;
+    }
+}
+
+
