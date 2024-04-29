@@ -23,6 +23,10 @@ sr.reveal('.home-text p',{delay:750, origin: 'right'});
 sr.reveal('.main-btn',{delay:860, origin: 'left'});
 sr.reveal('.share',{delay:950, origin: 'bottom'});
 sr.reveal('.home-img',{delay:1000, origin: 'right'});
+sr.reveal('.home-img1',{delay:1000, origin: 'right'});
+sr.reveal('.title',{delay:200, origin: 'left'});
+sr.reveal('.right-text',{delay:300, origin: 'right'});
+
 
 
 

@@ -436,6 +436,16 @@ section{
         width: 100%;
         height: auto;
     }
+    .home-img1{
+        margin:auto;
+        height: auto;
+        width: auto;
+    }
+    .home-img1 img{
+        max-width: 450px;
+        width: 100%;
+        height: auto;
+    }
 }
 
 @media (max-width: 900px){
@@ -474,9 +484,17 @@ section{
         flex-wrap: wrap;
     }
     .home-text{
+        font-size: 30px;
         order: 1;
     }
     .home-img{
+        margin: auto;
+        height: 20px;
+        width: 90%;
+        top: 10px;
+    }
+
+    .home-img1{
         margin: auto;
         height: 20px;
         width: 90%;
@@ -489,39 +507,17 @@ section{
         left: 3%;
 
     }
+    .home-img1 img{
+        max-width: 220px;
+        width: 100%;
+        position: absolute;
+        left: 20%;
+
+    }
     
 }
 
-@media (max-width: 412px){
-    .home-text span{
-        font-size: 15px;
-        position: absolute;
-        top: 47%;
-    }
-    .home-text h1{
-        font-size: 60px;
-        position: absolute;
-        top: 50%;
-    }
-    .home-text p{
-        font-size: 15px;
-        position: absolute;
-        top: 60%;
-    }
-    .main-btn{
-        font-size: 30px;
-        position: absolute;
-        top: 65%;
-    }
-    :root{
-        --big-font: 4rem;
-        --p-font: 15px;
-        transition: .2s;
-    }
-    .btn{
-        padding: 0 28px;
-    }
-}
+
 
 @media (max-width: 414px){
     .logo{
@@ -539,6 +535,10 @@ section{
 }
 
 .home-img img{
+    animation: imgg 2s ease-in-out infinite;
+    animation-delay: 2s;
+}
+.home-img1 img{
     animation: imgg 2s ease-in-out infinite;
     animation-delay: 2s;
 }
@@ -725,8 +725,8 @@ section{
     }
 
     .carousel-box {
-        top: 160px;
-        height: 300px;
+        top: 170px;
+        height: 200px;
         position: absolute;
         width: 100%; /* Set carousel box width to 100% */
     }
